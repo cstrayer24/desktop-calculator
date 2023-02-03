@@ -1,0 +1,9 @@
+[class*="num"],
+[class*="key"] {
+  color: black;
+  background-color: darkgreen;
+}
+
+#inputfeild {
+  font-size: 2em;
+}

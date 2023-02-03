@@ -1,0 +1,98 @@
+/* .wrapper {
+  display: grid;
+
+  height: 100vh;
+} */
+
+form.Calculator {
+  display: grid;
+  grid-template-areas:
+    "input input input input  "
+    "zero one two plus"
+    "three four five minus"
+    "six seven eight mult"
+    "nine dec back div"
+    "p1 p1 p2 p2"
+    "clear clear equal equal";
+
+  align-items: stretch;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+input#inputfeild {
+  grid-area: input;
+}
+
+button.num {
+  display: block;
+}
+button.num-0 {
+  grid-area: zero;
+}
+.num-1 {
+  grid-area: one;
+}
+.num-2 {
+  grid-area: two;
+}
+.num-3 {
+  grid-area: three;
+}
+.num-4 {
+  grid-area: four;
+}
+.num-5 {
+  grid-area: five;
+}
+.num-6 {
+  grid-area: six;
+}
+.num-7 {
+  grid-area: seven;
+}
+.num-8 {
+  grid-area: eight;
+}
+.num-9 {
+  grid-area: nine;
+}
+
+.key-dec {
+  grid-area: dec;
+}
+
+.key-plus {
+  grid-area: plus;
+}
+
+.key-minus {
+  grid-area: minus;
+}
+
+.key-mult {
+  grid-area: mult;
+}
+
+.key-div {
+  grid-area: div;
+}
+
+.key-equal {
+  grid-area: equal;
+}
+
+.key-back {
+  grid-area: back;
+}
+
+.key-clear {
+  grid-area: clear;
+}
+.p1 {
+  grid-area: p1;
+}
+.p2 {
+  grid-area: p2;
+}

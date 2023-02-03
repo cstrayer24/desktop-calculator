@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>desktop calculator</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="layout.css" />
+  </head>
+  <body>
+    <script src="calc.js"></script>
+    <div class="wrapper">
+      <div class="calc">
+        <form name="form1" class="Calculator">
+          <input type="text" name="numFeild" id="inputfeild" disabled />
+          <button
+            onclick="form1.numFeild.value += 0"
+            type="button"
+            class="num-0"
+          >
+            0
+          </button>
+          <button
+            type="button"
+            onclick="form1.numFeild.value += 1"
+            class="num-1"
+          >
+            1
+          </button>
+          <button
+            type="button"
+            onclick="form1.numFeild.value += 2"
+            class="num-2"
+          >
+            2
+          </button>
+          <button
+            type="button"
+            onclick="form1.numFeild.value += 3"
+            class="num-3"
+          >
+            3
+          </button>
+          <button
+            type="button"
+            onclick="form1.numFeild.value += 4"
+            class="num-4"
+          >
+            4
+          </button>
+          <button
+            type="button"
+            onclick="form1.numFeild.value += 5"
+            class="num-5"
+          >
+            5
+          </button>
+          <button
+            type="button"
+            onclick="form1.numFeild.value += 6"
+            class="num-6"
+          >
+            6
+          </button>
+          <button
+            type="button"
+            onclick="form1.numFeild.value += 7"
+            class="num-7"
+          >
+            7
+          </button>
+          <button
+            type="button"
+            onclick="form1.numFeild.value += 8"
+            class="num-8"
+          >
+            8
+          </button>
+          <button
+            type="button"
+            onclick="form1.numFeild.value += 9"
+            class="num-9"
+          >
+            9
+          </button>
+          <button
+            type="button"
+            onclick="form1.numFeild.value += '.'"
+            class="key-dec"
+          >
+            .
+          </button>
+          <button
+            type="button"
+            onclick="form1.numFeild.value+= '+'"
+            class="key-plus"
+          >
+            +
+          </button>
+          <button
+            type="button"
+            onclick="form1.numFeild.value+= '-'"
+            class="key-minus"
+          >
+            -
+          </button>
+          <button
+            type="button"
+            onclick="form1.numFeild.value+= '*'"
+            class="key-mult"
+          >
+            x
+          </button>
+          <button
+            type="button"
+            onclick="form1.numFeild.value+= '/'"
+            class="key-div"
+          >
+            /
+          </button>
+          <button
+            type="button"
+            onclick="form1.numFeild.value = eval(form1.numFeild.value)"
+            class="key-equal"
+          >
+            =
+          </button>
+          <button type="button" onclick="calculator.back()" class="key-back">
+            C
+          </button>
+          <button
+            class="p1 key"
+            onclick="form1.numFeild.value+='('"
+            name="p1"
+            type="button"
+          >
+            (</button
+          ><button
+            class="p2 key"
+            onclick="form1.numFeild.value+=')'"
+            name="p2"
+            type="button"
+          >
+            )
+          </button>
+          <button
+            type="button"
+            onclick="form1.numFeild.value=''"
+            class="key-clear"
+          >
+            CE
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
